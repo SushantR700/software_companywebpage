@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Signup Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		
+		<div class="form">
+			<h1>Signup</h1>
+			<form action="signup.php" method="post" onsubmit="return validateSignupForm()">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email</label>
+				<input type="email" id="eemail" name="eemail" >
+				<label for="password">Password</label>
+				<input type="password" id="ppassword" name="ppassword">
+				<input type="submit" value="Signup">
+			</form>
+		</div>
+	</div>
+
+	<script>
+		
+
+		function validateSignupForm() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("eemail").value;
+			var password = document.getElementById("ppassword").value;
+
+			if (name == "" || email == "" || password == "") {
+				alert("Please fill in all fields");
+				return false;
+			}
+
+			if (!validateEmail(email)) {
+				alert("Please enter a valid email address");
+				return false;
+			}
+
+			return true;
+		}
+
+		function validateEmail(email) {
+			var emailRegex = /\S+@\S+\.\S+/;
+			return emailRegex.test(email);
+		}
+	</script>
+</body>
+</html>

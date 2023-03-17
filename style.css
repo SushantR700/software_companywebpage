@@ -1,0 +1,245 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 30px;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .login-button,
+  .signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #333;
+  }
+  
+  
+  /* Services Section */
+  .services {
+    padding: 80px 0;
+  }
+  
+  .services-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .service-icon {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .service-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .service-description {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+  }
+  
+  .testimonials-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .testimonial-author {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    font-size: 16px;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    }
+
+    .navbar-nav.open {
+        display: block;
+        }
+        
+        .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+        }
+        
+        .nav-item a {
+        font-size: 24px;
+        }
+        
+        .hero-heading {
+        font-size: 36px;
+        }
+        
+        .hero-cta {
+        font-size: 20px;
+        padding: 15px 30px;
+        margin-top: 20px;
+        }
+        
+        .services-heading {
+        font-size: 28px;
+        }
+        
+        .service-icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+        }
+        
+        .service-heading {
+        font-size: 20px;
+        }
+        
+        .service-description {
+        font-size: 16px;
+        }
+        
+        .testimonials-heading {
+        font-size: 28px;
+        }
+        
+        .testimonial {
+        padding: 20px;
+        }
+        
+        .testimonial-text {
+        font-size: 20px;
+        }
+        
+        .testimonial-author {
+        font-size: 16px;
+        }
+        }
+
+     
+  
